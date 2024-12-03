@@ -3,7 +3,7 @@ import Searchbar from "@/components/Searchbar";
 
 const getJobById = async (id) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/jobs/${id}`, {
+    const res = await fetch(`https://it-cw2-jobs-site.vercel.app//api/jobs/${id}`, {
       cache: "no-store",
     });
 
