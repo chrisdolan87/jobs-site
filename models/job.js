@@ -2,8 +2,14 @@ import mongoose, {Schema} from "mongoose";
 
 const jobSchema = new Schema(
     {
-        title: String,
-        description: String,
+        title: {
+            type: String,
+            required: true,
+        },
+        description: {
+            type: String,
+            required: true,
+        },
     },
     {
         timestamps: true,

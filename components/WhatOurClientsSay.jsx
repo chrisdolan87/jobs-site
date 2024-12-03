@@ -4,8 +4,8 @@ export default function WhatOurClientsSay() {
             <div className="text-2xl font-bold">What our clients say...</div>
 
             <div className="flex justify-between gap-8">
-                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-slate-400 rounded-xl">
-                    <p className="text-lg font-bold mb-2">Company One</p>
+                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-[url('/3416214_59278.jpg')] bg-blend-overlay bg-center bg-cover rounded-2xl text-white font" style={{ backgroundColor: "#00242Aaa" }}>
+                    <p className="text-2xl font-bold mb-2">Company One</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Aperiam iste modi aliquid doloremque, necessitatibus
@@ -17,8 +17,8 @@ export default function WhatOurClientsSay() {
                         assumenda expedita.
                     </p>
                 </div>
-                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-slate-400 rounded-xl">
-                    <p className="text-lg font-bold mb-2">Company One</p>
+                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-[url('/3416214_59278.jpg')] bg-blend-overlay bg-center bg-cover rounded-2xl text-white font" style={{ backgroundColor: "#00242Aaa" }}>
+                    <p className="text-2xl font-bold mb-2">Company One</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Aperiam iste modi aliquid doloremque, necessitatibus
@@ -30,8 +30,8 @@ export default function WhatOurClientsSay() {
                         assumenda expedita.
                     </p>
                 </div>
-                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-slate-400 rounded-xl">
-                    <p className="text-lg font-bold mb-2">Company One</p>
+                <div className="min-h-96 min-w-80 w-1/3 p-8 text-center bg-[url('/3416214_59278.jpg')] bg-blend-overlay bg-center bg-cover rounded-2xl text-white font" style={{ backgroundColor: "#00242Aaa" }}>
+                    <p className="text-2xl font-bold mb-2">Company One</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Aperiam iste modi aliquid doloremque, necessitatibus

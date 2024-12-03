@@ -1,7 +1,7 @@
 export default async function Filters() {
     return (
         <>
-            <div className="h-full p-6 text-center bg-slate-600 rounded-xl">
+            <div className="h-full p-6 text-center rounded-2xl" style={{ background: "#00242A"}}>
                 <h2 className="text-xl font-bold text-white mb-6">Filter Results</h2>
 
                 <form className="flex flex-col gap-6">
