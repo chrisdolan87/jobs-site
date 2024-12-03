@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const getJobs = async () => {
   try {
-    const res = await fetch(`https://it-cw2-jobs-site.vercel.app//api/jobs`, {
+    const res = await fetch(`https://it-cw2-jobs-site.vercel.app/api/jobs`, {
       cache: "no-store",
     });
 
