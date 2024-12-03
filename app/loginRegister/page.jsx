@@ -4,7 +4,7 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 import LoginForm from "@/components/LoginForm";
 import RegisterForm from "@/components/RegisterForm";
 
-export default async function loginRegister() {
+export default async function LoginRegister() {
   const session = await getServerSession(authOptions);
 
   if (session) {

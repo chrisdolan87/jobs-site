@@ -1,4 +1,4 @@
-export default function termsAndConditions() {
+export default function TermsAndConditions() {
   return (
     <>
       <div className="max-w-7xl mx-auto my-8 flex flex-col gap-4">

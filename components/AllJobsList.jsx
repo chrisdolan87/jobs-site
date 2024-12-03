@@ -1,9 +1,8 @@
 import Link from "next/link";
-import DeleteButton from "./DeleteButton";
 
 const getJobs = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/jobs", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/jobs`, {
       cache: "no-store",
     });
 
@@ -14,6 +13,7 @@ const getJobs = async () => {
     return res.json();
   } catch (error) {
     console.log("Error loading jobs: ", error);
+    return { jobs: [] }; // Fallback to an empty jobs array
   }
 };
 
@@ -24,7 +24,7 @@ export default async function AllJobsList() {
     <>
       <div className="flex flex-col gap-6">
         {jobs.map((job) => (
-          <div className="min-w-96 p-6 flex flex-col justify-between gap-6 bg-gray-100 border border-gray-300 rounded-2xl">
+          <div key={job._id} className="min-w-96 p-6 flex flex-col justify-between gap-6 bg-gray-100 border border-gray-300 rounded-2xl">
             <div className="w-full flex justify-between">
               <div className="">
                 <Link

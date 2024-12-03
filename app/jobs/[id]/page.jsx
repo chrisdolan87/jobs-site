@@ -3,7 +3,7 @@ import Searchbar from "@/components/Searchbar";
 
 const getJobById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/jobs/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/jobs/${id}`, {
       cache: "no-store",
     });
 
@@ -20,6 +20,15 @@ const getJobById = async (id) => {
 export default async function Jobs({ params }) {
   const { id } = params;
   const { job } = await getJobById(id);
+
+  if (!job) {
+    return (
+      <div className="max-w-7xl mx-auto my-8">
+        <p className="text-center text-red-500">Job not found. Please try again later.</p>
+      </div>
+    );
+  }
+  
   const { title, description } = job;
 
   return (

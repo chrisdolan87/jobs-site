@@ -1,4 +1,4 @@
-export default function privacyPolicy() {
+export default function PrivacyPolicy() {
   return (
     <>
       <div className="max-w-7xl mx-auto my-8 flex flex-col gap-4">

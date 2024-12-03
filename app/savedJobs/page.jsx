@@ -1,9 +1,11 @@
-import Filters from "@/components/Filters";
-import Hero from "@/components/Hero";
-import List from "@/components/AllJobsList";
 import Searchbar from "@/components/Searchbar";
+import Hero from "@/components/Hero";
+import Filters from "@/components/Filters";
+import AllJobsList from "@/components/AllJobsList";
 
-export default function savedJobs() {
+export const dynamic = "force-dynamic"; // Ensures dynamic rendering
+
+export default function SavedJobs() {
     return (
         <>
             <Searchbar />
@@ -18,7 +20,7 @@ export default function savedJobs() {
                 </div>
 
                 <div className="w-4/6">
-                    <List />
+                    <AllJobsList />
                 </div>
             </div>
         </>

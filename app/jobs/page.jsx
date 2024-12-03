@@ -1,6 +1,8 @@
+import Searchbar from "@/components/Searchbar";
 import Filters from "@/components/Filters";
 import AllJobsList from "@/components/AllJobsList";
-import Searchbar from "@/components/Searchbar";
+
+export const dynamic = "force-dynamic"; // Ensures dynamic rendering
 
 export default function Jobs() {
     return (

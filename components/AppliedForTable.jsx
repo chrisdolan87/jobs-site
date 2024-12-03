@@ -41,7 +41,7 @@ export default async function AppliedForTable() {
             </thead>
             <tbody>
               {jobs.map((job) => (
-                <tr key={job.id} className="hover:bg-gray-50">
+                <tr key={job._id} className="hover:bg-gray-50">
                   <td className="border border-slate-500 px-4 py-2">
                     {job.title}
                   </td>

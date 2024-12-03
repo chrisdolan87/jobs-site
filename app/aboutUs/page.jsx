@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import WhatOurClientsSay from "@/components/WhatOurClientsSay";
 
-export default function aboutUs() {
+export default function AboutUs() {
   return (
     <>
       <Hero bgImage="/3227303_43540.jpg">
