@@ -1,7 +1,6 @@
 import connectMongoDB from "@/libs/mongodb";
 import { NextResponse } from "next/server";
-// import Job from "@/models/Job";
-import Job from "../../../models/Job";  // Adjust based on the actual file location
+import Job from "@/models/job";
 
 export async function POST(request) {
     const {title, description} = await request.json();

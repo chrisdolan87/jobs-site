@@ -1,7 +1,6 @@
 import connectMongoDB from "@/libs/mongodb";
 import { NextResponse } from "next/server";
-// import Job from "@/models/Job";
-import Job from "../../../../models/Job";  // 4 levels up to models/
+import Job from "@/models/job";
 
 export async function PUT(request, {params}) {
     const { id } = params;
