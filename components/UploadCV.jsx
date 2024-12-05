@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import { useState } from "react";
 
 export default function UploadCV() {
@@ -44,8 +45,7 @@ export default function UploadCV() {
   return (
     <div className="max-w-7xl mx-auto border border-slate-500 px-8 py-4 flex flex-col items-center rounded-2xl">
       <form
-        className="flex flex-col justify-center items-center gap-4"
-        onSubmit={handleRegisterSubmit}>
+        className="flex flex-col justify-center items-center gap-4">
         <p className="text-xl font-bold">Upload Your CV</p>
 
         <input
