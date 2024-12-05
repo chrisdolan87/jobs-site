@@ -3,7 +3,7 @@ import Searchbar from "@/components/Searchbar";
 
 const getJobById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/jobs/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/jobs/${id}`, {
       cache: "no-store",
     });
 

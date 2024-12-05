@@ -15,7 +15,7 @@ export default function EditUserForm({ name, email }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/users/${newEmail}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/${newEmail}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",

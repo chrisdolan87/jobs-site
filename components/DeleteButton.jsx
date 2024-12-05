@@ -10,7 +10,7 @@ export default function DeleteButton({ id }) {
         const confirmed = confirm("Are you sure you want to delete this job?");
 
         if (confirmed) {
-            const res = await fetch(`http://localhost:3000/api/jobs?id=${id}`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/jobs?id=${id}`, {
                 method: "DELETE",
             });
 
